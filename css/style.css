@@ -1,0 +1,71 @@
+:root {
+    font-size: 62.5%;
+    --primary-color: white;
+    --secondary-color: red;
+    --third-color: rgb(20,16,36 );
+    font-family: 'Jost', sans-serif;
+    line-height:160%;
+
+}
+
+body {
+    color: var(--third-color);
+  
+  
+}
+.heading {
+    font-size: 3rem;
+    font-weight:bold;
+    text-decoration:none;
+}
+.wuc {
+    color: var(--primary-color);
+}
+.ruc {
+    color: var(--secondary-color);
+}
+
+.regular {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration:none;
+}
+.whbg {
+    background-color: var(--primary-color);
+    color: var(--third-color);
+}
+.bkbg {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
+.rbg {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.numbers{
+    font-size: 6rem;
+    font-weight:300;
+}
+.fs18 {
+    font-size: 1.8rem;
+    text-decoration:none;
+    color:white;
+}
+.fs20 {
+    font-size: 2rem;
+}
+.fs16 {
+    font-size: 1.6rem;
+}
+.fs14 {
+    font-size: 1.4rem;
+}
+.lat{
+    text-align: left;
+}
+.cat {
+    text-align: center;
+}
+.rat {
+    text-align: right;
+}
