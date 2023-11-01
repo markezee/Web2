@@ -82,7 +82,7 @@ body {
 }
 input[type="search"] {
     border-radius: 5px;
-    background: #F6F6F6;
+    background:var(--primary-color);
     width: 300px;
     height: 60px;
     text-align: center;
