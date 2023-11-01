@@ -48,7 +48,7 @@ body {
 .rbg {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    width: 320px;
+    width:auto;
     height: 536px;
 }
 .numbers{
@@ -107,7 +107,7 @@ input[type="search"] {
 .block2{
     border-radius: 20px;
     background: var(--primary-color);
-    width: 300px;
+    width: auto;
     height: 420px;
     color: var(--third-color);
     text-align: center;
@@ -117,7 +117,7 @@ input[type="search"] {
 .block1{
     border-radius: 20px;
     background: var(--third-color);
-    width: 300px;
+    width: auto;
     height: 420px;
     color: var(--primary-color);
     text-align: center;
@@ -126,3 +126,7 @@ a[href^="tel:"] {
     color: var(--primary-color);
     font-weight: 600;
   }
+.block3 {
+    border-radius: 5px;
+    background: var(--secondary-color);
+}
