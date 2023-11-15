@@ -1,3 +1,9 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 :root {
     font-size: 62.5%;
     --primary-color: white;
@@ -179,6 +185,8 @@ a[href^="tel:"] {
 .wrapper {
     max-width: 100%;
     margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
  }
 .phone {
     width: 24px;
