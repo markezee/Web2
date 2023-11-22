@@ -11,8 +11,7 @@ html {
     --third-color: rgb(20,16,36 );
     font-family: 'Jost', sans-serif;
     line-height:160%;
-    box-sizing: border-box;
-
+    background-color: var(--primary-color);
 }
 
 body {
@@ -50,7 +49,7 @@ body {
 .bkbg {
     background-color: var(--third-color);
     color: var(--primary-color);
-    line-height: 100%;
+    line-height: 140%;
 }
 .rbg {
     background-color: var(--secondary-color);
@@ -66,7 +65,7 @@ body {
     font-size: 1.8rem;
     text-decoration:none;
     color:white;
-    line-height: 100%;
+    line-height: 140%;
     font-weight: 600;
 }
 .fs20 {
@@ -94,6 +93,7 @@ input[type="search"] {
     height: 60px;
     text-align: left;
     border:none;
+    padding: 15px;
   }
 .button1 {
     width: 300px;
@@ -124,24 +124,26 @@ input[type="search"] {
     border-radius: 20px;
     background: var(--primary-color);
     width: 90%;
-    height: 420px;
+    height: 450px;
     color: var(--third-color);
     text-align: center;
     border: 2px solid rgba(20, 16, 36, 0.20);
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 
 }
 .block1{
     border-radius: 20px;
     background: var(--third-color);
     width: 90%;
-    height: 420px;
+    height: 450px;
     color: var(--primary-color);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid rgba(20, 16, 36, 0.20);
+    padding: 10px;
 
     
 }
@@ -161,11 +163,10 @@ a[href^="tel:"] {
     margin:0%;
 }
 .padding {
-   padding: 10%;
+   padding: 10px;
 }
 .paddingbut0{
-    padding-bottom: 0%;
-    padding-top: 10%;
+    padding-top: 1em;
 }
 @media (min-width: 500px) {
     h1 {
@@ -175,18 +176,13 @@ a[href^="tel:"] {
     display: block;
     }
     }
-.photo1 {
-    width: 180px;
-    position:relative;
-    top: 10px;
-    
-
-}
+  
 .wrapper {
     max-width: 100%;
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
+    min-width: 370px;
  }
 .phone {
     width: 24px;
@@ -216,8 +212,59 @@ div {
     
 }
 .marg {
-    margin-bottom:5%
+    margin-bottom:10px
 }
 .margtop {
-margin-top: 5%;
+margin-top: 20px;
+}
+.padding-top {
+    padding-top: 15px;
+}
+ul{
+    list-style: none;
+    padding: 0%;
+}
+.margin {
+    margin: 20px;
+}
+.margup{
+    margin-top: 0;
+}
+.margdown{
+    margin-bottom: 0;
+}
+.padding-down{
+    padding-bottom: 15px;
+}
+.lhnormal{
+    line-height: normal;
+}
+.padding0{
+    padding: 0;
+}
+.circle{
+    position: relative;
+}
+.photo1{
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    object-fit: cover;
+    margin-top: 10px;
+    width: 90%;
+}
+.button3{
+    border: 0;
+  background: transparent;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.margright{
+    margin-right: auto;
 }
