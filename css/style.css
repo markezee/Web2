@@ -197,9 +197,7 @@ a[href^="tel:"] {
 
 
 }
-div {
-    display:block;
-}
+
 .zapiskurs {
     padding: 25px 50px 25px 50px;
     width: 90%;
@@ -262,7 +260,13 @@ img{
 header{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content:space-between;
+}
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    column-gap: 15px;
 }
 .margright{
     margin-right: auto;
@@ -273,3 +277,27 @@ header{
 .treners{
     max-width: 273px;
 }
+.margin-down{
+    margin-bottom: 15px;
+}
+.margin-up{
+    margin-top: 15px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
