@@ -307,3 +307,90 @@ footer{
     text-decoration: none;
     color: var(--primary-color);
   }
+  @media (min-width: 1180px) {
+    
+    .rwd1 {
+      display: flex;
+      justify-content: space-around;
+
+    }
+    nav{
+        display: flex;
+        gap: 20px;
+      }
+    .fs30bold{
+        font-weight: 600;
+        font-size:3rem;
+    }
+    .headertel{
+        display:block;
+    }
+    .headerbuttons{
+        display: none;
+    }
+    .photo1{
+        position: relative;
+        max-height: 917px;
+        max-width: 783px;
+        top: 0px;
+
+    }
+    .ma{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mb{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        align-items: flex-start;
+        
+    }
+    .buttonzapkur{
+        display: none;
+    }
+    .fs70{
+        font-size: 7rem;
+    }
+    .lat{
+        text-align: left;
+    }
+    .aboutus{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+    .skills{
+        display: flex;
+        justify-content: center;
+        gap:10px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text{
+        display: block;
+        width: 360px;
+    }
+    .margintop100{
+        margin-top: 100px;
+      }
+    
+    
+  }
+  @media (max-width: 1180px) {
+    nav {
+      display: none;    
+    }
+    .headertel{
+        display:none;
+    }
+    .buttonzapkur1{
+        display: none;
+    }
+    
+    
+  }
+ 
+  
