@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form_style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="bkbg wrapper paddingbut0 rwd1" >
+        <a class="fs18 lat padding fs30bold" href="/index.html">ROBO.SCHOOL</a>
+        <nav class="fs20 navigation">
+            <a href="form.html">Форма</a>
+            <a href="#">Тренеры</a>
+            <a href="#">Стоимость</a>
+        </nav>
+        <div>
+            <a class="fs30bold headertel" href="tel:+78000001122">+7 800 000 11 22</a>
+            <button class="button3 headerbuttons"><img src="Group%20312.svg" alt=""></button>
+            <button class="button3 headerbuttons"><img class="paddingright" src="Group%20313.svg" alt=""></button>
+        </div>
+    </header>
+    <main>
+        <form action="//httpbin.org/post" method="post">
+            <div class="forma">
+            <h1>Форма</h1>
+            <fieldset class="information">
+                <legend>Личная информация</legend>
+                <div class="panel">
+                    <label>
+                        <p class="textp">Имя*</p>
+                        <input type="text" name="name_1" placeholder="Марк" required>
+                    </label>
+                    <label>
+                        <p class="textp">Дата рождения</p>
+                        <input max="2023-01-01" type="date" name="date">
+                    </label>
+                    <p class="textp">Пол*</p>
+                    <div class="gender1">
+                        <input type="radio" name="size" id="man" required>
+                        <label class="gender" for="man">Мужской</label>
+                        <input type="radio" name="size" id="woman" required>
+                        <label class="gender" for="woman">Женский</label>
+                    </div>
+                    <label>
+                        <p class="textp">Пароль*</p>
+                        <input type="password" name="password" placeholder="Пароль" required>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="contact">
+                <legend>Контактная информация</legend>
+                <div class="panel">
+                    <label>
+                        <p class="textp">Email*</p>
+                        <input type="email" name="email" placeholder="example@gmail.com" required>
+                    </label>
+                    <label>
+                        <p class="textp">Номер</p>
+                        <input type="tel" name="number" placeholder="+7 (___) ___-____.">
+                    </label>
+                <legend>Время для связи*</legend>
+                <div class="select-wrapper">
+                    <select name="select-ccategory" id="" class="select">
+                        <option value="1">Утро (8:00-12:00)</option>
+                        <option value="2">Обед (12:00-15:00)</option>
+                        <option value="3">Вечер (15:00-18:00)</option>
+                        <option value="4">Ночь (18:00-21:00)</option>
+                    </select>
+                </div>
+                <button type="submit" class="button-2"><p class="text-button2">Отправить</p></button>
+                <button type="reset" class="button-1"><p class="text-button1">Сбросить</p></button>
+                </div>
+            </fieldset>
+               
+        </div>
+        </form>
+    </main>
+    <footer class="bkbg cat wrapper padding">
+        <div>
+            <p class="fs18 nomarg"  >ROBO.SCHOOL</p>
+            <p class="fs14 nomarg copy"  >© ROBO.SCHOOL</p>
+        </div>
+        
+        <a class="regular" href="/grid.html">GRID</a>
+        <a class="regular"  href="tel:+78000001122">+7 800 000 11 22</a>
+        <p class="fs14 nomarg copy1"  >© ROBO.SCHOOL</p>
+        
+        
+    </footer >
+    
+</body>
+</html>

@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*outline: 1px solid red;*/
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5rem;
+}
+
+html, body { height: 100%;}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
+.button-settings{
+    display: none;
+}
+
+
+.hede-href-displ {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.div-button-set {
+    display: flex;
+    border-radius: 10px;
+    justify-content: end;
+}
+
+
+.forma{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:red;
+    justify-content: center;
+    gap: 10px;
+}
+
+legend{
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+fieldset{
+    border: none;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 25px 50px;
+    gap: 20px;
+    height:600px;
+    border-radius: 25px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 25px 50px;
+    gap: 20px;
+    border-radius: 25px;
+}
+
+input {
+    font-size: 1.5rem;
+    background: transparent;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.panel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.textp{
+    font-size: 1.5rem;
+    font-weight:600;
+    margin: 15px 20px 0 10px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.gender1{
+    display: flex;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.gender{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: 2px solid rgb(20,16,36 );
+    border-radius: 10px;
+    padding: 15px 30px 15px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    color: red;
+}
+input[type="radio"]:checked + .gender{
+    background-color: red;
+    color:white;
+}
+
+.select{
+    appearance: none;
+    border: 2px solid rgb(20,16,36 ) ;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 35px 10px 15px;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    background-image: url(down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.button-1{
+    transition: transform 0.3s ease;
+    display: flex;
+    background-color:red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 80%;
+    justify-content: center;
+}
+
+.button-1:hover{
+    background-color:tomato;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px  rgb(20,16,36 );
+    transform: scale(1.1);
+}
+
+.button-1:active{
+    background-color:  rgb(20,16,36 );
+    cursor: pointer;
+}
+
+.button-2{
+    transition: transform 0.3s ease;
+    display: flex;
+    background-color:red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 80%;
+    justify-content: center;
+}
+
+.button-2:hover{
+    background-color: tomato;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px  rgb(20,16,36 );
+    transform: scale(1.1);
+}
+
+.button-2:active{
+    background-color: rgb(20,16,36 );
+    cursor: pointer;
+}
+
+.text-button1{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 20px;
+    padding-right: 50%;
+    padding-left: 50%;
+}
+
+.text-button1:hover{
+    color:  rgb(20,16,36 );
+}
+
+.text-button1:active{
+    color: white;
+}
+
+.text-button2{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 20px;
+    padding-right: 50%;
+    padding-left: 50%;
+}
+
+.text-button2:hover{
+    color:  rgb(20,16,36 );
+}
+
+.text-button2:active{
+    color: white;
+}
