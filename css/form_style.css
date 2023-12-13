@@ -132,7 +132,6 @@ input[type="radio"]:checked + .gender{
 }
 
 .select{
-    appearance: none;
     border: 2px solid rgb(20,16,36 ) ;
     border-radius: 10px;
     background-color: white;

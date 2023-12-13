@@ -31,17 +31,17 @@
                 <legend>Личная информация</legend>
                 <div class="panel">
                     <label class="text">Имя*
-                        <input type="text" name="name_1" placeholder="Марк" required>
+                        <input type="text" name="name" placeholder="Марк" required>
                     </label>
                     <label class="text">Дата рождения
                         <input max="2023-01-01" type="date" name="date">
                     </label>
                     <p class="text">Пол*</p>
                     <div class="gender1">
-                        <input type="radio" name="size" id="man" required>
-                        <label class="gender" for="man">Мужской</label>
-                        <input type="radio" name="size" id="woman" required>
-                        <label class="gender" for="woman">Женский</label>
+                       <input type="radio" name="gender" value="man" id ="m" required>
+                        <label class="gender" for="m">Мужской</label>
+                        <input type="radio" name="gender" value="woman" id="w" required>
+                        <label class="gender" for="w">Женский</label>
                     </div>
                     <label class="text">
                         Пароль*
@@ -59,9 +59,9 @@
                         <input type="tel" name="number" placeholder="+7 (___) ___-____.">
                     </label>
                 </div>
-                <p class="text">Время для связи*</p>
+                <label class="text">Время для связи*</label>
                 <div class="select-wrapper">
-                    <select name="select-ccategory" id="#" class="select">
+                    <select name="select-ccategory" id="time" class="select">
                         <option value="1">Утро (8:00-12:00)</option>
                         <option value="2">Обед (12:00-15:00)</option>
                         <option value="3">Вечер (15:00-18:00)</option>
