@@ -25,30 +25,26 @@
             <button class="button3 headerbuttons"><img class="paddingright" src="Group%20313.svg" alt=""></button>
         </div>
     </header>
-    <main>
+    <main class="wrapper">
         <form action="//httpbin.org/post" method="post">
-            <div class="forma">
-            <h1>Форма</h1>
             <fieldset class="information">
                 <legend>Личная информация</legend>
                 <div class="panel">
-                    <label>
-                        <p class="textp">Имя*</p>
+                    <label class="text">Имя*
                         <input type="text" name="name_1" placeholder="Марк" required>
                     </label>
-                    <label>
-                        <p class="textp">Дата рождения</p>
+                    <label class="text">Дата рождения
                         <input max="2023-01-01" type="date" name="date">
                     </label>
-                    <p class="textp">Пол*</p>
+                    <p class="text">Пол*</p>
                     <div class="gender1">
                         <input type="radio" name="size" id="man" required>
                         <label class="gender" for="man">Мужской</label>
                         <input type="radio" name="size" id="woman" required>
                         <label class="gender" for="woman">Женский</label>
                     </div>
-                    <label>
-                        <p class="textp">Пароль*</p>
+                    <label class="text">
+                        Пароль*
                         <input type="password" name="password" placeholder="Пароль" required>
                     </label>
                 </div>
@@ -56,30 +52,29 @@
             <fieldset class="contact">
                 <legend>Контактная информация</legend>
                 <div class="panel">
-                    <label>
-                        <p class="textp">Email*</p>
+                    <label class="text">Email*
                         <input type="email" name="email" placeholder="example@gmail.com" required>
                     </label>
-                    <label>
-                        <p class="textp">Номер</p>
+                    <label class="text">Номер
                         <input type="tel" name="number" placeholder="+7 (___) ___-____.">
                     </label>
-                <legend>Время для связи*</legend>
+                </div>
+                <p class="text">Время для связи*</p>
                 <div class="select-wrapper">
-                    <select name="select-ccategory" id="" class="select">
+                    <select name="select-ccategory" id="#" class="select">
                         <option value="1">Утро (8:00-12:00)</option>
                         <option value="2">Обед (12:00-15:00)</option>
                         <option value="3">Вечер (15:00-18:00)</option>
                         <option value="4">Ночь (18:00-21:00)</option>
                     </select>
                 </div>
-                <button type="submit" class="button-2"><p class="text-button2">Отправить</p></button>
-                <button type="reset" class="button-1"><p class="text-button1">Сбросить</p></button>
-                </div>
-            </fieldset>
+                <button type="submit" class="button-2 text-button2 ">Отправить</button>
+                <button type="reset" class="button-1 text-button1">Сбросить</button>
                
-        </div>
+            </fieldset>
         </form>
+            
+        
     </main>
     <footer class="bkbg cat wrapper padding">
         <div>
