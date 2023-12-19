@@ -8,18 +8,28 @@ html {
   }
 :root {
     font-size: 62.5%;
-    --primary-color: white;
-    --secondary-color: red;
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(179, 0, 0);
     --third-color: rgb(20,16,36 );
     font-family: 'Jost', sans-serif;
-    line-height:160%;
+    line-height:normal;
     background-color: var(--primary-color);
+}
+::selection{
+    background-color: tomato;
+}
+::placeholder {
+    color: var(--secondary-color);
 }
 
 body {
     color: var(--third-color);
 
   
+}
+.incoming::before{
+    content: "Robo School - ";
+    font-weight: 600;
 }
 
 .numcol {
@@ -29,7 +39,7 @@ body {
     font-size: 3rem;
     font-weight:bold;
     text-decoration:none;
-    line-height: 140%;
+    line-height: normal;
 }
 .wuc {
     color: var(--primary-color);
@@ -42,6 +52,7 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     text-decoration:none;
+    padding: 10px;
 }
 .whbg {
     background-color: var(--primary-color);
@@ -51,7 +62,6 @@ body {
 .bkbg {
     background-color: var(--third-color);
     color: var(--primary-color);
-    line-height: 140%;
     width: 100%;
 }
 .rbg {
@@ -125,7 +135,7 @@ input[type="search"] {
 .block2{
     border-radius: 20px;
     background: var(--primary-color);
-    max-width: 400px;
+    max-width: 420px;
     width: 90%;
     height: auto;
     color: var(--third-color);
@@ -134,13 +144,14 @@ input[type="search"] {
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    position: relative;
 
 }
 .block1{
     border-radius: 20px;
     background: var(--third-color);
     width: 90%;
-    max-width: 400px;
+    max-width: 420px;
     height: auto;
     color: var(--primary-color);
     text-align: center;
@@ -265,9 +276,11 @@ header{
     display: flex;
     align-items: center;
     justify-content:space-between;
+    padding-bottom: 10px;
 }
 .container1{
     display: flex;
+    overflow-y: hidden;
     justify-content:space-between;
     column-gap: 15px;
     overflow-x:auto;
@@ -392,7 +405,7 @@ footer{
         justify-content: center;
         text-align: left;
         gap: 15px;
-        width: 70%;
+        width: 85%;
         margin-left: auto;
         margin-right: auto;
         flex-wrap: nowrap;
@@ -403,7 +416,7 @@ footer{
         justify-content: center;
         gap:10px;
         text-align: left;
-        width: 70%;
+        width: 85%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -411,13 +424,13 @@ footer{
         margin-top: 100px;
       }
     .robo{
-        width: 70%;
+        width: 85%;
         margin-right: auto;
         margin-left: auto;
     }
     .container1{
         overflow-y:hidden;
-    width: 70%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
 
@@ -426,7 +439,7 @@ footer{
         display: flex;
         flex-direction:row;
         flex-wrap: nowrap;
-    width: 70%;
+    width: 85%;
         justify-content: center;
         margin-left: auto;
     margin-right: auto;
@@ -474,8 +487,87 @@ footer{
   }
   button:hover{
     transform: scale(1.1);
+    background-color: tomato;
+    color: var(--third-color);
+    box-shadow: 5px 5px 15px  rgb(20,16,36 );
+
   }
   button:active{
-    background-color: tomato;
+    
   }
- 
+  .loader {
+    width: 48px;
+    height: 48px;
+    border:10px solid var(--third-color);
+    top: 42%;
+    right: 42%;
+    border-radius: 50%;
+    position: absolute;
+    transform:rotate(45deg);
+    animation: ani2 5s forwards;
+    box-sizing: border-box;
+  }
+  li{
+    display: block;
+  }
+  .load{
+    opacity: 0;
+    animation: ani 7s forwards;
+    
+}
+
+@keyframes ani {
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  } 
+  @keyframes ani2 {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+  .loader::before {
+    content: "";
+    position: absolute;
+    inset:-10px;
+    border-radius: 50%;
+    border:10px solid var(--secondary-color);
+    animation: prixClipFix 2s infinite linear;
+    box-sizing: border-box;
+  }
+
+  @keyframes prixClipFix {
+      0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+  }
+  .skip-link {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    font-size: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    padding: 30px 60px;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    transform: translateY(-100%);
+  }
+  .skip-link:focus {
+    transform: translateY(20%);
+  }
+  .kostya{
+    height: 379.16px;
+  }
+  .sr-only1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }

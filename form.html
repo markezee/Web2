@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,21 +30,21 @@
             <fieldset class="information">
                 <legend>Личная информация</legend>
                 <div class="panel">
-                    <label class="text">Имя*
+                    <label class="text">Имя<i>*</i>
                         <input type="text" name="name" placeholder="Марк" required>
                     </label>
                     <label class="text">Дата рождения
                         <input max="2023-01-01" type="date" name="date">
                     </label>
-                    <p class="text">Пол*</p>
+                    <p class="text">Пол<i>*</i></p>
                     <div class="gender1">
                        <input type="radio" name="gender" value="man" id ="m" required>
                         <label class="gender" for="m">Мужской</label>
                         <input type="radio" name="gender" value="woman" id="w" required>
                         <label class="gender" for="w">Женский</label>
                     </div>
-                    <label class="text">
-                        Пароль*
+                    <label class="text" for="password">
+                        Пароль<i>*</i>
                         <input type="password" name="password" placeholder="Пароль" required>
                     </label>
                 </div>
@@ -52,20 +52,20 @@
             <fieldset class="contact">
                 <legend>Контактная информация</legend>
                 <div class="panel">
-                    <label class="text">Email*
+                    <label class="text">Email<i>*</i>
                         <input type="email" name="email" placeholder="example@gmail.com" required>
                     </label>
                     <label class="text">Номер
                         <input type="tel" name="number" placeholder="+7 (___) ___-____.">
                     </label>
                 </div>
-                <label class="text">Время для связи*</label>
+                <label class="text">Время для связи<i>*</i></label>
                 <div class="select-wrapper">
                     <select name="select-ccategory" id="time" class="select">
-                        <option value="1">Утро (8:00-12:00)</option>
-                        <option value="2">Обед (12:00-15:00)</option>
-                        <option value="3">Вечер (15:00-18:00)</option>
-                        <option value="4">Ночь (18:00-21:00)</option>
+                        <option value="8:00-12:00">Утро (8:00-12:00)</option>
+                        <option value="12:00-15:00">Обед (12:00-15:00)</option>
+                        <option value="15:00-18:00">Вечер (15:00-18:00)</option>
+                        <option value="18:00-21:00">Ночь (18:00-21:00)</option>
                     </select>
                 </div>
                 <button type="submit" class="button-2 text-button2 ">Отправить</button>
@@ -78,7 +78,7 @@
     </main>
     <footer class="bkbg cat wrapper padding">
         <div>
-            <p class="fs18 nomarg"  >ROBO.SCHOOL</p>
+            <p class="fs18 nomarg logo"  >ROBO.SCHOOL</p>
             <p class="fs14 nomarg copy"  >© ROBO.SCHOOL</p>
         </div>
         

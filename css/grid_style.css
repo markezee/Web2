@@ -92,7 +92,9 @@ footer{
 
 }
 .image{
-    max-width: 100%;
+    width: 90%;
+    object-fit: cover;
+    height: 90%;
     grid-area: a;
 }
 .link{

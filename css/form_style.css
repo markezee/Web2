@@ -10,7 +10,7 @@ html {
 
 :root {
     font-size: 62.5%;
-    background-color: red;
+    background-color: var(--secondary-color);
 }
 
 body {
@@ -33,6 +33,9 @@ body > footer {
 .hede-href-displ {
     margin-right: auto;
     margin-left: auto;
+}
+i{
+    color: var(--secondary-color);
 }
 
 
@@ -60,7 +63,7 @@ fieldset{
     display:flex;
     justify-content: center;
     margin-bottom: 10px;
-    background-color: white;
+    background-color: var(--primary-color);
     padding: 25px 50px;
     border-radius: 25px;
     width: 60%;
@@ -73,7 +76,7 @@ fieldset{
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
-    background-color: white;
+    background-color: var(--primary-color);
     padding: 25px 50px;
     border-radius: 25px;
     width:60%;
@@ -118,23 +121,23 @@ input[type="radio"]{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 20px;
-    border: 2px solid rgb(20,16,36 );
+    border: 2px solid var(--third-color);;
     border-radius: 10px;
     padding: 15px 30px 15px 20px;
     font-size: 1.6rem;
     cursor: pointer;
     text-align: center;
-    color: red;
+    color:var(--secondary-color)
 }
 input[type="radio"]:checked + .gender{
-    background-color: red;
-    color:white;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
 }
 
 .select{
-    border: 2px solid rgb(20,16,36 ) ;
+    border: 2px solid var(--third-color); ;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--primary-color);
     padding: 10px 35px 10px 15px;
     outline: none;
     cursor: pointer;
@@ -146,7 +149,7 @@ input[type="radio"]:checked + .gender{
 .button-1{
     transition: transform 0.3s ease;
     display: flex;
-    background-color:red;
+    background-color:var(--secondary-color);
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -159,19 +162,19 @@ input[type="radio"]:checked + .gender{
 .button-1:hover{
     background-color:tomato;
     cursor: pointer;
-    box-shadow: 5px 5px 15px  rgb(20,16,36 );
+    box-shadow: 5px 5px 15px  var(--third-color);;
     transform: scale(1.1);
 }
 
 .button-1:active{
-    background-color:  rgb(20,16,36 );
+    background-color: var(--third-color);;
     cursor: pointer;
 }
 
 .button-2{
     transition: transform 0.3s ease;
     display: flex;
-    background-color:red;
+    background-color:var(--secondary-color);
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -184,17 +187,17 @@ input[type="radio"]:checked + .gender{
 .button-2:hover{
     background-color: tomato;
     cursor: pointer;
-    box-shadow: 5px 5px 15px  rgb(20,16,36 );
+    box-shadow: 5px 5px 15px  var(--third-color);;
     transform: scale(1.1);
 }
 
 .button-2:active{
-    background-color: rgb(20,16,36 );
+    background-color:var(--third-color);
     cursor: pointer;
 }
 
 .text-button1{
-    color: white;
+    color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 700;
     padding: 20px;
@@ -203,15 +206,15 @@ input[type="radio"]:checked + .gender{
 }
 
 .text-button1:hover{
-    color:  rgb(20,16,36 );
+    color: var(--third-color);
 }
 
 .text-button1:active{
-    color: white;
+    color: var(--primary-color);
 }
 
 .text-button2{
-    color: white;
+    color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 700;
     padding: 20px;
@@ -220,10 +223,15 @@ input[type="radio"]:checked + .gender{
 }
 
 .text-button2:hover{
-    color:  rgb(20,16,36 );
+    color:  var(--third-color);
 }
 
 .text-button2:active{
-    color: white;
+    color: var(--primary-color);
 }
-
+.logo {
+    width: 10em;
+    justify-content: start;
+    margin: 100px;
+    transform: rotate(30deg) scale(1.5) skew(20deg, 10deg);
+}
