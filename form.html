@@ -21,8 +21,10 @@
         </nav>
         <div>
             <a class="fs30bold headertel" href="tel:+78000001122">+7 800 000 11 22</a>
-            <button class="button3 headerbuttons"><img src="Group%20312.svg" alt=""></button>
-            <button class="button3 headerbuttons"><img class="paddingright" src="Group%20313.svg" alt=""></button>
+            <span class="sr-only1">Телефон</span>
+            <a class="button3 headerbuttons" href="tel:+78000001122"><img src="Group%20312.svg" alt=""></a>
+            <span class="sr-only1">Меню</span>
+            <a href="index.html" class="button3 headerbuttons"><img class="paddingright" src="Group%20313.svg" alt=""></a>
         </div>
     </header>
     <main class="wrapper">
@@ -30,11 +32,11 @@
             <fieldset class="information">
                 <legend>Личная информация</legend>
                 <div class="panel">
-                    <label class="text">Имя<i>*</i>
-                        <input type="text" name="name" placeholder="Марк" required>
+                    <label class="text" for="name">Имя<i>*</i>
+                        <input type="text" name="name" placeholder="Марк" id="name">
                     </label>
-                    <label class="text">Дата рождения
-                        <input max="2023-01-01" type="date" name="date">
+                    <label class="text" for="date">Дата рождения
+                        <input max="2023-01-01" type="date" name="date" id="date">
                     </label>
                     <p class="text">Пол<i>*</i></p>
                     <div class="gender1">
@@ -45,18 +47,18 @@
                     </div>
                     <label class="text" for="password">
                         Пароль<i>*</i>
-                        <input type="password" name="password" placeholder="Пароль" required>
+                        <input type="password" name="password" placeholder="Пароль" id="password" required>
                     </label>
                 </div>
             </fieldset>
             <fieldset class="contact">
                 <legend>Контактная информация</legend>
                 <div class="panel">
-                    <label class="text">Email<i>*</i>
-                        <input type="email" name="email" placeholder="example@gmail.com" required>
+                    <label class="text" for="email">Email<i>*</i>
+                        <input type="email" name="email" placeholder="example@gmail.com" id="email" required>
                     </label>
-                    <label class="text">Номер
-                        <input type="tel" name="number" placeholder="+7 (___) ___-____.">
+                    <label class="text" for="telephone">Номер
+                        <input type="tel" name="telephone" id="telephone" placeholder="+7 (___) ___-____.">
                     </label>
                 </div>
                 <label class="text">Время для связи<i>*</i></label>
@@ -82,8 +84,8 @@
             <p class="fs14 nomarg copy"  >© ROBO.SCHOOL</p>
         </div>
         
-        <a class="regular" href="/grid.html">GRID</a>
-        <a class="regular"  href="tel:+78000001122">+7 800 000 11 22</a>
+        <a class="regular padding0" href="/grid.html">GRID</a>
+        <a class="regular padding0"  href="tel:+78000001122">+7 800 000 11 22</a>
         <p class="fs14 nomarg copy1"  >© ROBO.SCHOOL</p>
         
         

@@ -183,15 +183,7 @@ a[href^="tel:"] {
 .paddingbut0{
     padding-top: 1em;
 }
-@media (min-width: 500px) {
-    h1 {
-    display: none;
-    }
-    #hidden {
-    display: block;
-    }
-    }
-  
+
 .wrapper {
     max-width: 100%;
     margin: 0 auto;
@@ -319,7 +311,7 @@ footer{
     padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
-    clip: rect(0 0 0 0);
+    clip: rect(0,0, 0,0);
     overflow: hidden;
   }
   a{
@@ -570,4 +562,10 @@ footer{
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
