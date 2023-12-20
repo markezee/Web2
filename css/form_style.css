@@ -102,12 +102,42 @@ input {
 }
 
 .text{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight:600;
     margin: 15px 20px 0 10px;
     padding-top: 15px;
     text-align: center;
 }
+input[type="text"] {
+    border-radius: 5px;
+    background:var(--primary-color);
+    width: 300px;
+    height: 60px;
+    text-align: left;
+    border: 2px solid var(--third-color);
+    padding: 15px;
+    display: block;
+  }
+  input[type="tel"] {
+    border-radius: 5px;
+    background:var(--primary-color);
+    width: 300px;
+    height: 60px;
+    text-align: left;
+    border: 2px solid var(--third-color);
+    padding: 15px;
+    display: block;
+  }
+  input[type="email"] {
+    border-radius: 5px;
+    background:var(--primary-color);
+    width: 300px;
+    height: 60px;
+    text-align: left;
+    border: 2px solid var(--third-color);
+    padding: 15px;
+    display: block;
+  }
 
 .gender1{
     display: flex;
@@ -230,8 +260,8 @@ input[type="radio"]:checked + .gender{
     color: var(--primary-color);
 }
 .logo {
-    width: 10em;
-    justify-content: start;
-    margin: 100px;
+    width: 10rem;
+    margin: 80px;
     transform: rotate(30deg) scale(1.5) skew(20deg, 10deg);
 }
+
