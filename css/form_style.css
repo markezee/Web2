@@ -28,7 +28,19 @@ body > footer {
 .button-settings{
     display: none;
 }
-
+.wrapper1{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 16px;
+    min-width: 370px;
+  }
+  .wrapper {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 430px;
+ }
 
 .hede-href-displ {
     margin-right: auto;
